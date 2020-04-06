@@ -268,7 +268,7 @@ myApp = [
         document.querySelector(".total-attempts").innerHTML = attempt;
         document.querySelector(".total-correct").innerHTML = score + " " + "out of 30";
         const percentage = ( (score / 5) / myApp.length ) * 100;
-        document.querySelector(".total-percentage").innerHTML = percentage + "%";
+        document.querySelector(".total-percentage").innerHTML = percentage.toFixed(1) + "%";
     }
     
     function resetQuiz() {
