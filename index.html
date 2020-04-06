@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assessment Quiz Application</title>
+        <link rel="stylesheet" href="style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        <div class="shadow"> </div>
+
+        <div class="quiz-box custom-box">
+        <div id="intro">
+        <h4>This is a general vocabulary quiz. 
+            You will have 15 seconds to answer each question. 
+            Each question is worth 5 points.</h4>
+            </div>
+        <button type="button" class="start-quiz-btn btn">Start the quiz</button>
+        </div>
+
+        <div class="quiz custom-box">
+            <div class="stats">
+                <div class="quiz-time">
+                    <div class="remaining-time"></div>
+                    <span class="time-up-text">Time is up!</span>
+                </div>
+                <div class="score-board">
+                    <span class="score-text">Score:</span>
+                    <span class="correct-answers"></span>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="current-question-num">
+            </div>
+
+            <div class="question-text">
+ 
+            </div>
+
+            </div>
+
+            <div class="option-box">
+          
+            </div>
+
+            <div class="answer-description">
+            </div>
+
+            <div class="next-question">
+                <button type="button" class="next-question-btn btn">Next Question</button>
+                <button type="button" class="see-result-btn btn">See Your Result</button>
+            </div>
+        </div>
+
+        <div class="quiz-over-box custom-box">
+            <h1>Quiz Results</h1>
+            <h4>Total Questions: <span class="total-questions"></span></h4>
+            <h4>Attempt: <span class="total-attempts"></span></h4>
+            <h4>Score: <span class="total-correct"></span></h4>
+            <h4>percentage: <span class="total-percentage"></span></h4>
+            <button type="button" class="restart-quiz-btn btn">Start Over</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
